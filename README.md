@@ -66,7 +66,7 @@ flowchart TB
 
 ## Prototype
 
-We have implemented a Minimum Viable Code (MVC) prototype to validate the direct κ-map reconstruction approach and data pipeline. To establish our training loop and baseline performance, this prototype currently utilizes a U-Net architecture as a stand-in for the complete FNO backbone.
+The prototype follows the direct κ-map reconstruction approach and data pipeline. To establish our training loop and baseline performance, this prototype currently utilizes a U-Net architecture as a stand-in for the complete FNO backbone.
 
 **Progress to Date:**
 - **Data Generation:** Developed a synthetic lensing dataset generator yielding pairs of lensed images and their corresponding Singular Isothermal Sphere (SIS) mass profiles.
@@ -134,9 +134,3 @@ Applying neural operators to real lensing data introduces several challenges. Th
 | **Resolution Independence** | Via `caustics`, but network may be resolution-dependent. | FNO is inherently resolution independent. |
 
 
-
-**Repository:** [https://github.com/BeathovenGala/FNO](https://github.com/BeathovenGala/FNO)
-
----
-
-*This README accompanies the FNO proposal submitted to ml4-sci@cern.ch.*

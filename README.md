@@ -30,12 +30,12 @@ The architecture learns the mapping I(θ) → κ(x,y) directly, with physics gui
 
 ```mermaid
 graph TD
-    I[Input Image I_obs(θ)] --> PRE[MGE + PSF Preprocessing]
-    PRE --> FNO[Fourier Neural Operator]
-    FNO --> K[Predicted κ Map]
-    K --> L1[Poisson Loss: ∇²Ψ - 2κ]
-    K --> L2[Lens Consistency Loss]
-    K --> UNC[Monte Carlo Dropout<br>Uncertainty Maps]
+    I["Input Image I_obs(θ)"] --> PRE["MGE + PSF Preprocessing"]
+    PRE --> FNO["Fourier Neural Operator"]
+    FNO --> K["Predicted κ Map"]
+    K --> L1["Poisson Loss: ∇²Ψ - 2κ"]
+    K --> L2["Lens Consistency Loss"]
+    K --> UNC["Monte Carlo Dropout<br>Uncertainty Maps"]
 ```
 
 1. **Preprocessing:** MGE removes lens light; differentiable PSF convolution accounts for telescope blur.

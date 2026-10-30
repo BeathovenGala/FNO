@@ -57,7 +57,7 @@ class LensingDataset(Dataset):
             sx = np.random.uniform(-0.1, 0.1)
             sy = np.random.uniform(-0.1, 0.1)
             source_sigma = 0.1
-            source = torch.exp(-((x-sx)**2 + (y-sy)**2) / (2 * source_sigma**2))
+            source = torch.exp(-((x-sx)**2 + (y-sy)**2) / (2 * source_sigma**2))    
             source = source.unsqueeze(0).unsqueeze(0)
             
             # Ray Trace
